@@ -51,7 +51,7 @@ console.log(addString("10,5")); // Output: 15
 console.log(addString("1\n2,3,7")); // Output: 13
 console.log(addString("//;\n1;2")); // Output: 3
 try {
-    console.log(addString("1,-2,3,-4")); // Should throw an exception
+    console.log(addString("1,-2,3,-4")); // should throw an exception
 } catch (e) {
     console.error(e.message); // Output: negative numbers not allowed: -2, -4
 }

@@ -15,6 +15,21 @@ const addString=(numbers)=>{
     let sum = 0;
     let negatives = [];
 
+    for (let num of numArray) {
+        let parsedNum = parseInt(num, 10);
+        
+        if (isNaN(parsedNum)) {
+            continue;
+        }
+
+        if (parsedNum < 0) {
+            negatives.push(parsedNum);
+        }
+
+        sum += parsedNum;
+    }
+
+    return sum;
 
 }
 console.log(addString("1,2,3"))

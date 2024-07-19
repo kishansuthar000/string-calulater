@@ -29,6 +29,11 @@ const addString=(numbers)=>{
         sum += parsedNum;
     }
 
+    //throw error if is there negative values.
+    if (negatives.length > 0) {
+        throw new Error("negative numbers not allowed: " + negatives.join(", "));
+    }
+
     return sum;
 
 }
